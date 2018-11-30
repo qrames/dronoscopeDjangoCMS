@@ -1,0 +1,43 @@
+{% load static cms_tags menu_tags sekizai_tags %}
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+        <link rel="stylesheet" href={% static "css/reset.css" %}>
+        <link rel="stylesheet" href={% static "css/style.css" %}>
+        {% render_block "css" %}
+    </head>
+    <body>
+        {% cms_toolbar %}
+        <div class="container">
+          <nav class="color0">
+            <ul class="nav">
+              <!-- <li>
+                <a href="#presentation">Présentation</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li class="logo">
+                <a href="#main"></a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li> -->
+              {% show_menu 0 100 100 100 %}
+            </ul>
+          </nav>
+            {% block content %}{% endblock content %}
+        </div>
+        {% render_block "js" %}
+    </body>
+</html>
