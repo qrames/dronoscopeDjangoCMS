@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div id="services" class="section color1">
+	<!-- <div class="content">
+		{% placeholder "content3" %}
+	</div> -->
+
+  <h2 class="section-title">Services</h2>
+
+  <div class="separator"><span>×××</span></div>
+
+  <p class="section-subtitle">Que propose le Dronoscope ?</p>
+
+  <ul class="list-image">
+    <li>
+      <img src="https://ledronoscope.com/wp-content/uploads/rochefort.jpg" alt="Photographie et Vidéo par drone" width="480" height="360">
+      <div>
+        <h3>Photographie, Vidéo et Réalisation de clip promotionnel.</h3>
+        <hr>
+        <p>Que cela soit pour un événement, un gîte, un reportage ou tout autre œuvre, la vue du ciel reste indéniablement le meilleur moyen de magnifier un paysage. Le Dronoscope vous propose une solution complète allant de la prise de vidéo et de photos sur le terrain à la création de votre clip vidéo personnalisé&nbsp;pour vous offrir le meilleur rendu visuel possible qui saura faire vibrer votre clientèle&nbsp;!</p>
+      </div>
+    </li>
+    <li>
+      <img src="https://ledronoscope.com/wp-content/uploads/aqueducdd-2.jpg"  alt="Modélisation 3D" width="480" height="360">
+      <div>
+        <h3>Modélisation 3D et Orthophotographie</h3>
+        <hr>
+        <p>Avec un drone il est possible d’obtenir un rendu 3D haute définition de n’importe quel élément (bâtiment, zone topographique, relief&nbsp;…) afin de mener diverses études à posteriori comme par exemple la simulation d’ensoleillement en urbanisme, l’analyse de déformation des surfaces en génie civil, le calcul de cubature pour les chantiers, ou encore en modèle de présentation virtuel pour l’immobilier…</P>
+      </div>
+    </li>
+    <li>
+      <img src="https://ledronoscope.com/wp-content/uploads/barrage.jpg"  alt="Analyse des désordres sur barrages" width="480" height="360">      <div>
+        <h3>Analyse visuelle des désordres sur barrages hydrauliques</h3>
+        <hr>
+        <p>Plus besoin d’envoyer des équipes de techniciens sur place ! Le Dronoscope se charge d’inspecter et de rédiger le rapport d’analyse visuelle des désordres des ouvrages bétonnés en classifiant et géolocalisant les diverses anomalies sur un modèle 3D fournit avec le rapport final. </p>
+      </div>
+    </li>
+    <li>
+      <img src="https://ledronoscope.com/wp-content/uploads/2014/07/photo-07-big1.jpg"  alt="Inspection par drone" width="480" height="360">
+      <div>
+        <h3>Inspection par drone</h3>
+        <hr>
+        <p>Contrôle de maintenance, constat après un sinistre, état des lieux… le drone peut inspecter les endroits les plus inaccessibles en minimisant les risques humains. De plus, l’usage d’un drone apporte une grande précision d’analyse afin de visualiser les défauts en temps réel et d’ériger des rapports détaillés de l’état des zones diagnostiquées (toitures, éoliennes, ponts…) dans un temps réduit.</p>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+{% endblock content %}
