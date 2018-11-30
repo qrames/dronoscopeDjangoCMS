@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div id="contact" class="section color1">
+	<!-- <div class="content">
+		{% placeholder "content5" %}
+	</div> -->
+	<h2 class="section-title" style="font-size: 90px;">Contacter Le Dronoscope</h2>
+
+	<div class="separator"><span>×××</span></div>
+
+	<div class="section-subtitle">obtenez votre devis gratuit !</div>
+
+<form action="#" method="post" novalidate="novalidate">
+
+  <label for="name">Votre nom et prénom</label>
+  <input type="text" name="nom-prenom" value="" size="40" id="name" aria-required="true" aria-invalid="false">
+
+  <label for="denomination">Dénomination sociale (si vous êtes une entreprise)</label>
+  <input type="text" name="denomination-sociale" value="" size="40"id="denomination" aria-invalid="false">
+
+  <label for="adresse-email">Votre adresse email</label>
+  <input type="email" name="adresse-email" value="" size="40" id="adresse-email" aria-required="true" aria-invalid="false">
+
+  <label for="telephone">Votre numéro de téléphone (facultatif)</label>
+  <input type="tel" name="telephone" value="" size="40" id="telephone" aria-invalid="false">
+
+  <label for="le-projet">Décrivez brièvement le projet que vous souhaitez confier au Dronoscope</label>
+  <textarea name="le-projet" cols="40" rows="10" id="le-projet" aria-invalid="false"></textarea>
+  <input type="submit" value="Envoyer">
+</form>
+{% endblock content %}
