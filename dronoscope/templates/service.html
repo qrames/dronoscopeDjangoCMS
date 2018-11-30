@@ -3,7 +3,7 @@
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
-{% block content %}
+{% block main %}
 <div id="services" class="section color1">
 	<!-- <div class="content">
 		{% placeholder "content3" %}
@@ -16,12 +16,16 @@
   <p class="section-subtitle">Que propose le Dronoscope ?</p>
 
   <ul class="list-image">
+  {% block content %}
+  {% endblock %}
+  </ul>
+<!--
     <li>
       <img src="https://ledronoscope.com/wp-content/uploads/rochefort.jpg" alt="Photographie et Vidéo par drone" width="480" height="360">
       <div>
         <h3>Photographie, Vidéo et Réalisation de clip promotionnel.</h3>
         <hr>
-        <p>Que cela soit pour un événement, un gîte, un reportage ou tout autre œuvre, la vue du ciel reste indéniablement le meilleur moyen de magnifier un paysage. Le Dronoscope vous propose une solution complète allant de la prise de vidéo et de photos sur le terrain à la création de votre clip vidéo personnalisé&nbsp;pour vous offrir le meilleur rendu visuel possible qui saura faire vibrer votre clientèle&nbsp;!</p>
+        <p>Que cela soit pour un événement, un gîte, un reportage ou tout autre œuvre, la vue du ciel reste indéniablement le meilleur moyen de magnifier un paysage. Le Dronoscope vous propose une solution complète allant de la prise de vigrid-template-columnsdéo et de photos sur le terrain à la création de votre clip vidéo personnalisé&nbsp;pour vous offrir le meilleur rendu visuel possible qui saura faire vibrer votre clientèle&nbsp;!</p>
       </div>
     </li>
     <li>
@@ -47,8 +51,7 @@
         <p>Contrôle de maintenance, constat après un sinistre, état des lieux… le drone peut inspecter les endroits les plus inaccessibles en minimisant les risques humains. De plus, l’usage d’un drone apporte une grande précision d’analyse afin de visualiser les défauts en temps réel et d’ériger des rapports détaillés de l’état des zones diagnostiquées (toitures, éoliennes, ponts…) dans un temps réduit.</p>
       </div>
     </li>
-  </ul>
-
+-->
 </div>
 
-{% endblock content %}
+{% endblock main %}

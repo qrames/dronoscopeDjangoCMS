@@ -1,0 +1,19 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load i18n %}
+
+{% block newsblog_content %}
+    {% for article in article_list %}
+
+        {% if CMS_TEMPLATE|slice:":-5" == "service" %}
+        {% include "aldryn_newsblog/includes/service-article.html" %}
+        {% elif "presentation" %}
+          {% include "aldryn_newsblog/includes/presentation-article.html" %}
+        {% else %}
+          {% include "aldryn_newsblog/includes/article.html" %}
+        {% endif %}
+    {% empty %}
+        <p>{% trans "No items available" %}</p>
+    {% endfor %}
+
+    {% include "aldryn_newsblog/includes/pagination.html" %}
+{% endblock %}

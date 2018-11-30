@@ -1,0 +1,18 @@
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+<li>
+  <article class="article
+      {% if article.is_featured %} featured{% endif %}
+      {% if not article.published %} unpublished{% endif %}">
+      {# The image is only shown on the detail view by using the condition "and detail_view" #}
+      <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+      <div>
+        <h3>
+          {{article.title}}
+        </h3>
+        <hr>
+        <p>
+          {% render_model article "lead_in" %}
+        </p>
+    </div>
+  </article>
+</li>

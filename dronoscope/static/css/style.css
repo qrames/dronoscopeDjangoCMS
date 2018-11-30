@@ -105,22 +105,28 @@ body {
 }
 
 .row-flex {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.row-flex .col {
-  width: 280px;
+.row-flex > h3 {
+  font-size: 10.5rem;
 }
-.row-flex .col p {
+.row-flex > h3 > h3 {
+  font-size: 10.5rem;
+}
+.row-flex article {
+  width: 220px;
+}
+.row-flex article p {
   text-align: justify;
   line-height: 1.8rem;
 }
 
 form {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 form label {
@@ -139,32 +145,34 @@ form input, form textarea {
 
 .list-image {
   text-align: left;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-.list-image > li {
+.list-image h3 {
+  font-size: 1.5rem;
+}
+.list-image > li > article {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.list-image > li > img {
+.list-image > li > article > img {
   border: 5px #FFFFFF solid;
   width: 100%;
   height: auto;
 }
-.list-image > li > div > h3 {
-  font-size: 1.5rem;
-}
-.list-image > li > div > hr {
+.list-image > li > article grid-template-columns
+> div > hr {
   border: none;
   background-color: rgba(245, 238, 227, 0.9);
   height: 2px;
   width: 40px;
   margin: 3px 0 20px 0;
 }
-.list-image > li > div p {
+.list-image > li > article grid-template-columns
+> div p {
   text-align: justify;
   margin-bottom: 1rem;
 }
@@ -174,7 +182,7 @@ form input, form textarea {
 }
 
 .grid-image {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -206,7 +214,7 @@ form input, form textarea {
   }
 }
 @media screen and (min-width: 750px) {
-  .list-image > li {
+  .list-image > li article {
     grid-template-columns: 300px 1fr;
   }
 
