@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+<div id="portfolio" class="section color0">
+<!--	<div class="content">
+		{% placeholder "content4" %}
+	</div> -->
+	<h2 class="section-title retro-borders" style="font-size: 90px;">Portfolio</h2>
+
+	<div class="separator"><span>×××</span></div>
+	<p class="section-subtitle">Les œuvres du Dronoscope ! </p>
+
+	<div class="filters">
+		<div class="filter-label">Filtrer par</div>
+		<ul class="cats">
+			<li data-slug="modelisation-3d"><span>Modélisation 3D</span></li>
+			<li data-slug="photo"><span>Photographie</span></li>
+			<li data-slug="videos"><span>Vidéos</span></li>
+		</ul>
+  </div>
+  <div>
+		<ul class="grid-image">
+      <li id="item-122" data-cat="videos">
+      	<a href="https://ledronoscope.com/portfolio-dronoscope/clip-civp-images-drone/">
+      		<img src="https://ledronoscope.com/wp-content/uploads/aqueduc-4-480x360.png"  alt="CIVP video">
+      		<span class="icon retroicon-tv"></span>
+      		<h3>Clip CIVP images drone</h3>
+      	</a>
+        <a class="mfp-iframe" href="https://www.youtube.com/watch?v=3FZ_J_Oe48E"></a>
+      </li>
+      <li id="item-91" data-cat="photo">
+      	<a href="https://ledronoscope.com/portfolio-dronoscope/camargue-photo/">
+      		<img src="https://ledronoscope.com/wp-content/uploads/camargue-480x360.jpg"  alt="La Camargue - Photo">
+      		<span class="icon retroicon-photo"></span>
+      		<h3>La Camargue</h3>
+      	</a>
+      			<a class="mfp-image" href="https://ledronoscope.com/wp-content/uploads/camargue.jpg"></a>
+      </li>
+      <li id="item-77" data-cat="videos">
+      	<a href="https://ledronoscope.com/portfolio-dronoscope/trouvetonvigneron-com/">
+      		<img src="https://ledronoscope.com/wp-content/uploads/2deuch2-480x360.jpg"  alt="Trouvetonvigneron.com">
+      		<span class="icon retroicon-tv"></span>
+      		<h3>Trouvetonvigneron.com</h3>
+      	</a>
+      	<a class="mfp-iframe" href="https://www.youtube.com/watch?v=bCcJrv50uyw"></a>
+      </li>
+      <li id="item-76" data-cat="modelisation-3d">
+      	<a href="https://skfb.ly/6uvoX" target="&quot;_self&quot;">
+      		<img src="https://ledronoscope.com/wp-content/uploads/barrage-480x360.png"  alt="Barrage de Rouvière - Modélisation 3D">
+      		<span class="icon retroicon-clip"></span>
+      		<h3>Barrage de Rouvière Mod3D</h3>
+      	</a>
+      </li>
+      <li id="item-74" data-cat="modelisation-3d">
+      	<a href="https://sketchfab.com/models/c5d374500a464c4ba1b26d7ba51257ea" target="&quot;_self&quot;">
+      		<img src="https://ledronoscope.com/wp-content/uploads/aqueduc-480x360.png"  alt="Aqueduc Modélisation 3D">
+      		<span class="icon retroicon-clip"></span>
+      		<h3>Aqueduc, Hérault Mod3D</h3>
+      	</a>
+      </li>
+      <li id="item-71" data-cat="videos">
+      	<a href="https://ledronoscope.com/portfolio-dronoscope/cirque-navacelle/">
+      		<img src="https://ledronoscope.com/wp-content/uploads/aqueduc-1-480x360.png"  alt="Cirque de navacelle">
+      		<span class="icon retroicon-tv"></span>
+      		<h3>Cirque de Navacelle</h3>
+      	</a>
+  			<a class="mfp-iframe" href="https://www.youtube.com/watch?v=-36VxrakCtM"></a>
+      </li>
+      <li id="item-70" data-cat="videos">
+      	<a href="https://ledronoscope.com/portfolio-dronoscope/region-lot/">
+      		<img src="https://ledronoscope.com/wp-content/uploads/aqueduc-2-480x360.png"  alt="">
+      		<span class="icon retroicon-tv"></span>
+      		<h3>La région du Lot</h3>
+      	</a>
+  			<a class="mfp-iframe" href="https://www.youtube.com/watch?v=7iWMfqzekJQ"></a>
+      </li>
+      <li id="item-69" data-cat="photo">
+      	<a href="https://ledronoscope.com/portfolio-dronoscope/rochefort-du-gard-photo/">
+      		<img src="https://ledronoscope.com/wp-content/uploads/DJI_0005-480x360.jpg"  alt="">
+      		<span class="icon retroicon-photo"></span>
+      		<h3>Rochefort du Gard</h3>
+      	</a>
+  			<a class="mfp-image" href="https://ledronoscope.com/wp-content/uploads/DJI_0005.jpg"></a>
+      </li>
+		</ul>
+	</div><!-- portfolio-list -->
+		<div class="more-posts">
+			<a href="https://ledronoscope.com/portfolio-dronoscope/">Voir tout</a>
+		</div>
+
+</div>
+{% endblock content %}
