@@ -1,0 +1,27 @@
+.color1{
+  background: #984242 url('../../../media/background/grain.png');
+  color: #F6EDD8;
+  h1, h2 {
+    text-shadow: 1px 2px #484A4D, 3px 4px #D4CEBF;
+  }
+}
+
+.color0{
+  background: #e3e0dd url('../../../media/background/grain.png');
+  color: #383a3c;
+  h1, h2 {
+    text-shadow: 1px 2px #FCFAF7, 3px 4px #484A4D;
+  }
+}
+
+.section {
+  padding: 1rem 0;
+  box-sizing: border-box;
+  >.content {
+    border-bottom: dashed #717171 1px;
+    border-top: dashed #717171 1px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100%;
+  }
+}
